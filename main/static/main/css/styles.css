@@ -1,0 +1,26 @@
+aside a{
+    color:#fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+main .features{
+    text-align: center;
+    margin-top: 80px;
+    color:#343a40;
+
+}
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: center;
+
+}
+form{
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
