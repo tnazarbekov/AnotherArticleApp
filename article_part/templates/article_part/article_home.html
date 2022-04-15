@@ -1,0 +1,16 @@
+{%extends 'main/home_page.html'%}
+{%block title%}
+О нас
+{%endblock%}
+{%block content%}
+    <div class="features">
+      <h1>Новости на сайте</h1>
+      {%for i in article%}
+            <div class="alert alert-warning">
+                <h3>{{article.title}}</h3>
+                <p>{{article.text}}</p>
+                <a href="{%url 'article_detail' i.id %}" class="btn btn-warning">Читать детальнее</a>
+            </div>
+      {%endfor%}
+  </div>
+{%endblock%}

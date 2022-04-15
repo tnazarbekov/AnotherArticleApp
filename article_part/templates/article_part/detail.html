@@ -1,0 +1,14 @@
+{%extends 'main/home_page.html'%}
+{%block title%}
+{{article.title}}
+{%endblock%}
+{%block content%}
+<div class="features">
+      <h1>{{article.title}}</h1>
+      <p>{{article.data}}</p>
+      <p>{{article.text}}</p>
+      <a href="{%url 'article_delete' article.id %}" class="btn btn-danger">Удалить запись</a>
+      <a href="{%url 'article_update' article.id %}" class="btn btn-info">Редактировать запись</a>
+
+  </div>
+{%endblock%}l>
